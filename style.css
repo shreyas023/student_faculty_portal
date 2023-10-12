@@ -148,3 +148,88 @@ body{
     width: 30%;
     margin: 10px;
 }
+
+
+/* login page  */
+.account-page{
+	padding: 50px 0;
+}
+.form-container{
+	background: radial-gradient(#fff,#E6E5E5);
+	width: 300px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0);
+	overflow: hidden;
+	border: 2px solid #adadad;
+    border-radius: 15px;
+}
+.form-container span{
+	font-weight: 700;
+	padding: 0 10px;
+	color: #555;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+    font-size: 20px;
+}
+.form-btn{
+	display: inline-block;
+
+}
+.form-container form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 130px;
+	transition: transform 1s;
+}
+.form-container form input{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	padding: 0 10px;
+	border: 1px solid #5d5d5d;
+    border-radius: 5px;
+}
+.form-container form .btn{
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	margin: 10px 0;
+    background: #5d5d5d;
+    padding: 2px;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+.form-container form .btn:focus{
+	outline: none;
+}
+.form-container form .btn:hover{
+    background-color: #D53439;
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+#LoginForm{
+	left: -300px;
+}
+#RegForm{
+	left: 0;
+}
+.form-container form a{
+	font-size: 12px;
+    text-decoration: none;
+    color: #FFF;
+}
+#Indicator{
+	width: 100px;
+	border: none;
+	background: #D53439;
+	height: 3px;
+	margin-top: 8px;
+	transform: translateX(110px);
+	transition: transform 1s;
+}

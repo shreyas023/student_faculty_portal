@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NMIMS Portal | Login</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="NMIMS Navi Mumbai">
+        </div>
+    </div>
+
+    <!-- Login  -->
+    <div class="account-page">
+		<div class="container">
+			<div class="row">
+				<div class="new">
+					<div class="form-container">
+						<div class="form-btn">
+							<span onclick="login()">Login</span>
+							<span onclick="register()">Register</span>
+							<hr id="Indicator">
+						</div>
+						<form id="LoginForm">
+							<input type="email" placeholder="email" class="email" required> 
+							<input type="password" placeholder="Password" class="password" required> 
+							<div style="display: flex;align-items: center;">
+							<input type="checkbox" checked="checked" name="" style="width: 15px;height: 15px;margin: 5px 5px;"><div style="font-size: 12px;display: inline-block;">Remember password</div>
+							</div>
+							<button type="submit" class="btn"><a href="index.html" style="font-size: 18px;">Login</a></button>
+							<a href="index.html" style="color:black">Forgot Password ?</a>
+						</form>
+						<form id="RegForm">
+							<input type="text" placeholder="Name" class="name" required> 
+							<input type="email" placeholder="email" class="email" required>
+							<input type="password" placeholder="Password" class="password" required> 
+							<button type="submit" class="btn"><a href="payment.html" style="font-size: 18px;">Register</a></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Footer  -->
+    <div class="footer">
+        <div class="col1">
+            <span>Quick Links</span>
+            <hr>
+            <span>Notifications</span>
+            <span>Mentors</span>
+            <span>Projects</span>
+        </div>
+        <div class="col1">
+            <span>© Copyright 2023 | NMIMS</span>
+        </div>
+        <div class="col1">
+            <span>Username</span>
+            <hr>
+            <span>My Profile</span>
+            <span>Dashboard</span>
+            <span>Logout</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
