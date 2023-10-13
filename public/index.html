@@ -4,39 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="./forms_styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>NMIMS Project Research Portal</title>
 </head>
 
 <body>
-    <div class="content">
-        <div class="heading">
-            apply for <$project_name>
+    <div class="nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="NMIMS Navi Mumbai">
         </div>
-
-        <div class="application-form">
-            <form action="/submit" method="post">
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="student_name" required>
-
-                <label for="sap-id">Sap ID:</label>
-                <input type="text" id="sap-id" name="student_sap_id" required>
-
-                <label for="name">Email:</label>
-                <input type="email" id="email" name="student_email" required>
-
-                <label for="dom-know">Domain Knowledge:</label>
-                <input type="name" id="dom-know" name="student_domain" required>
-
-                <label for="hours">How many yours you can give daily?:</label>
-                <input type="hours" id="hours" name="student_hours" required>
-
-                <br><input type="submit" value="Submit">
-            </form>
+        <div class="nav-items">
+            <div class="item">
+                <img src="./assets/dashboard.png" alt="">
+                <span>Dashboard</span>
+            </div>
+            <div class="item">
+                <img src="./assets/report.png" alt="">
+                <span>Projects</span>
+            </div>
+            <div class="item">
+                <img src="./assets/teacher.png" alt="">
+                <span>Mentors</span>
+            </div>
+            <div class="item">
+                <img src="./assets/announcement.png" alt="">
+                <span>Announcement</span>
+            </div>
+            <div class="item">
+                <img src="./assets/settings.png" alt="">
+                <span>Settings</span>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="./assets/profile.png" alt="">
+            <span><a href="./login_page/index.html">Log in</a></span>
         </div>
     </div>
+
+    <!-- Domain -->
+    <div class="domain">
+        <div class="row" style="justify-content: flex-start;">
+            <h1>
+                Choose Projects:
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col" style="background: url(./assets/image1.pn);">
+                <h1><a href="./forms/index.html">Stress Manager</a></h1>
+            </div>
+            <div class="col" style="background: url(./assets/pic.jp);">
+                <h1><a href="./forms/index.html">..</a></h1>
+            </div>
+            <div class="col" style="background: url(./assets/image3.pn);">
+                <h1><a href="./forms/index.html">...</a></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="col1">
+            <span>Quick Links</span>
+            <hr>
+            <span>Notifications</span>
+            <span>Mentors</span>
+            <span>Projects</span>
+        </div>
+        <div class="col1">
+            <span>© Copyright 2023 | NMIMS</span>
+        </div>
+        <div class="col1">
+            <span>Username</span>
+            <hr>
+            <span>My Profile</span>
+            <span>Dashboard</span>
+            <span>Logout</span>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
