@@ -28,6 +28,7 @@ app.use(express.static('public'));
 
 // Handle form submissions
 app.use(express.urlencoded({ extended: true }));
+
 app.post('/submit', (req, res) => {
     const { student_name, student_sap_id, student_email, student_domain, student_hours } = req.body;
 
@@ -43,6 +44,25 @@ app.post('/submit', (req, res) => {
     });
 
     console.log('Received name:', student_name);
+    // console.log('Received email:', email);
+});
+
+//register
+app.post('/submit2', (req, res) => {
+    const { faculty_name, faculty_email, faculty_password } = req.body;
+
+    const sql2 = 'INSERT INTO faculty (faculty_name, faculty_email, faculty_password) VALUES (?, ?, ?)';
+    connection.query(sql2, [faculty_name, faculty_email, faculty_password], (err, result) => {
+        if (err) {
+            console.error('Error inserting data:', err);
+            res.status(500).send('Error inserting data');
+        } else {
+            console.log('Data inserted successfully');
+            res.status(200).send('Form submitted successfully');
+        }
+    });
+
+    console.log('Received name:', faculty_name);
     // console.log('Received email:', email);
 });
 
